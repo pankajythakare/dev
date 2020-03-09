@@ -193,6 +193,18 @@ input, select, textarea {
 			text-align: justify;
 		}
 
+		p.content-left {
+			-moz-columns: 20em 2;
+			-webkit-columns: 20em 2;
+			-ms-columns: 20em 2;
+			columns: 20em 2;
+			-moz-column-gap: 2em;
+			-webkit-column-gap: 2em;
+			-ms-column-gap: 2em;
+			column-gap: 2em;
+			text-align: left;
+		}
+
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.5;
@@ -3028,7 +3040,14 @@ input, select, textarea {
 					flex: 0 1 auto;
 					width: 100%;
 				}
-
+				.spotlight .content-left {
+					-moz-flex: 0 1 auto;
+					-webkit-flex: 0 1 auto;
+					-ms-flex: 0 1 auto;
+					flex: 0 1 auto;
+					width: 100%;
+					text-align : left;
+				}
 					.spotlight .content header.major h2:after {
 						margin-left: auto;
 						margin-right: auto;
