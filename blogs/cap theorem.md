@@ -10,6 +10,8 @@ A very common question for system design. Which database should I use and why sh
 
 We cannot have all above three for any distributed data store as to be consistent, all nodes should be updated in an order simultaneously. If any network issue can cause partition failure impacting other nodes and consumers may point to old data set. To overcome this, data store can stop serving requests on out-of-date partitions and hence availability will have an impact.
 
+![Cap Theorem Illustration](https://raw.githubusercontent.com/pankajythakare/dev/master/blogs/images/CAP.png)
+
 When network partition failure starts to happen should we
 * cancel the operation?
 * proceed with operation?
